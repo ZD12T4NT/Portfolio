@@ -178,11 +178,31 @@ i {
 
   img {
     border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(0.98);
+    }
   }
 
   .link {
     a {
       margin: 0 0.7rem 0 0;
+    }
+  }
+}
+
+.blog {
+  margin-bottom: 10rem;
+
+  h1 {
+    font-size: 3rem;
+    color: #e5e5e5;
+  }
+
+  img {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(0.98);
     }
   }
 }

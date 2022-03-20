@@ -209,10 +209,36 @@ i {
 
 .projects img {
   border-radius: 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.projects img:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .projects .link a {
   margin: 0 0.7rem 0 0;
+}
+
+.blog {
+  margin-bottom: 10rem;
+}
+
+.blog h1 {
+  font-size: 3rem;
+  color: #e5e5e5;
+}
+
+.blog img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog img:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .about {
