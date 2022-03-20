@@ -276,7 +276,37 @@ i {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+#myBtn {
+  position: fixed;
+  right: 1rem;
+  bottom: 2rem;
+  border-radius: 10%;
+  background: #e5e5e5;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: all 0.3s ease-in-out;
+  z-index: 99;
+
+  &:hover {
+    background-color: #909497;
+  }
+
+  i {
+    color: #000;
+    font-size: 1.3rem;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
 @media only screen and (min-width: 850px) {
+  #myBtn {
+    right: 3rem;
+  }
   .burger {
     display: none;
   }
@@ -347,6 +377,10 @@ i {
   .down-arrow {
     left: 8.4em;
   }
+
+  #myBtn {
+    right: 3rem;
+  }
 }
 
 // Animations
@@ -370,30 +404,4 @@ i {
 .reveal.active {
   transform: translateY(0px);
   opacity: 1;
-}
-
-#myBtn {
-  position: fixed;
-  right: 5rem;
-  bottom: 2rem;
-  border-radius: 10%;
-  background: #e5e5e5;
-  padding: 0.5rem;
-  border: none;
-  cursor: pointer;
-  opacity: 100%;
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    background-color: #909497;
-  }
-
-  i {
-    color: #000;
-    font-size: 1.3rem;
-  }
-}
-
-.hidden {
-  opacity: 0;
 }
