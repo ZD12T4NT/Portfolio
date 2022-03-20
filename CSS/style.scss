@@ -371,3 +371,29 @@ i {
   transform: translateY(0px);
   opacity: 1;
 }
+
+#myBtn {
+  position: fixed;
+  right: 5rem;
+  bottom: 2rem;
+  border-radius: 10%;
+  background: #e5e5e5;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #909497;
+  }
+
+  i {
+    color: #000;
+    font-size: 1.3rem;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
