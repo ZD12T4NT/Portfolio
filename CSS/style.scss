@@ -269,7 +269,7 @@ i {
         }
 
         input[type="submit"] {
-          background: #fff;
+          background-color: #fff;
           padding: 0.5rem;
           width: 7.25rem;
           cursor: pointer;
@@ -277,6 +277,11 @@ i {
           font-size: 1rem;
           font-weight: 400;
           border: none;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background-color: #909497;
+          }
         }
       }
     }
@@ -457,4 +462,33 @@ i {
 .reveal.active {
   transform: translateY(0px);
   opacity: 1;
+}
+
+// More projects
+
+.more{
+  display: none;
+
+}
+
+.more-projects{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  button{
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  font-family: "Open-Sans", sans-serif;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #909497;
+  }
+
+  }
 }

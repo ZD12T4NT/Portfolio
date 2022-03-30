@@ -62,3 +62,13 @@ document.addEventListener("scroll", () => {
 });
 
 backToTopButton.addEventListener("click", goToTop);
+
+
+// More projects
+const more = document.getElementById('more');
+const moreProj = document.querySelector('.more');
+
+more.addEventListener('click', () => {
+  moreProj.classList.toggle('more').style.display = 'block'
+})
+

@@ -310,7 +310,7 @@ i {
 }
 
 .footer .footer-container .footer-content form input[type="submit"] {
-  background: #fff;
+  background-color: #fff;
   padding: 0.5rem;
   width: 7.25rem;
   cursor: pointer;
@@ -318,6 +318,12 @@ i {
   font-size: 1rem;
   font-weight: 400;
   border: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer .footer-container .footer-content form input[type="submit"]:hover {
+  background-color: #909497;
 }
 
 .footer .social-media {
@@ -511,5 +517,35 @@ i {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   opacity: 1;
+}
+
+.more {
+  display: none;
+}
+
+.more-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.more-projects button {
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  font-family: "Open-Sans", sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.more-projects button:hover {
+  background-color: #909497;
 }
 /*# sourceMappingURL=style.css.map */
